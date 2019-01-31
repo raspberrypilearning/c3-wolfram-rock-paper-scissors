@@ -1,11 +1,14 @@
-title: c3-wolfram-rock-paper-scissors
+title: Rock, Paper, Scissors
 hero_image: images/banner.png
-description: c3-wolfram-rock-paper-scissors description
+description:
 version: 4
 listed: false
 copyedit: false
-last_tested: "2019-01-31"
+last_tested: "2018-12-06"
 steps:
   - title: Introduction
-  - title: Step title
-  - title: What next?
+  - title: Building Blocks of the Game
+  - title: Setting up Game Rules
+  - title: Keeping Score
+  - title: Cleaning your Code
+  - title: Building an Interface
