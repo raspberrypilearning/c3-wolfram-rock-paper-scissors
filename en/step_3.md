@@ -14,7 +14,7 @@ For example, if `human` chooses `rock`:
 
 ---task---
 
-Create a new variable: `results`. At the moment, this variable can be equal to "Win". The variable will update with each play as we set up the rules.
+Create a new variable: `results`. At the moment, this variable should be equal to "Win". The variable will update with each play as we set up the rules.
 
 ```
 results = "Win"
@@ -41,7 +41,7 @@ Remember to use a `;` to add a new task to the `Button`.
 ```
 Button[rock,
  human = rock;
- robot = RandomChoice[rpc];
+ robot = RandomChoice[{rock, paper, scissors}];
  Which[
   robot == rock, results = "Tie",
   robot == paper, results = "Lose",
@@ -62,7 +62,7 @@ Add a `Which` statement to your `scissors` `Button`, and your `paper` `Button`.
 ```
 Button[paper,
  human = paper;
- robot = RandomChoice[rpc];
+ robot = RandomChoice[{rock, paper, scissors}];
  Which[
   robot == paper, results = "Tie",
   robot == scissors, results = "Lose",
@@ -72,7 +72,7 @@ Button[paper,
 ```
 Button[scissors,
  human = scissors;
- robot = RandomChoice[rpc];
+ robot = RandomChoice[{rock, paper, scissors}];
  Which[
   robot == scissors, results = "Tie",
   robot == rock, results = "Lose",

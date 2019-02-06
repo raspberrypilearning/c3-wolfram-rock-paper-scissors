@@ -52,9 +52,9 @@ Create buttons for `rock`, `paper`, and `scissors`. Each button should update th
 You can make a button do multiple actions by separating the actions with a `;`.
 
 ```
-Button[rock, human = rock; robot = RandomChoice[rpc]]
-Button[paper, human = paper; robot = RandomChoice[rpc]]
-Button[scissors, human = scissors; robot = RandomChoice[rpc]]
+Button[rock, human = rock; robot = RandomChoice[{rock, paper, scissors}]]
+Button[paper, human = paper; robot = RandomChoice[{rock, paper, scissors}]]
+Button[scissors, human = scissors; robot = RandomChoice[{rock, paper, scissors}]]
 ```
 
 --- /task ---
@@ -67,9 +67,9 @@ We can do this using `Dynamic`. `Dynamic` displays the updated value, so each ti
 Add `Dynamic` results for the variables `human` and `robot` to show the new outputs each time we press the buttons.
 
 ```
-Button[rock, human = rock; robot = RandomChoice[rpc]]
-Button[paper, human = paper; robot = RandomChoice[rpc]]
-Button[scissors, human = scissors; robot = RandomChoice[rpc]]
+Button[rock, human = rock; robot = RandomChoice[{rock, paper, scissors}]]
+Button[paper, human = paper; robot = RandomChoice[{rock, paper, scissors}]]
+Button[scissors, human = scissors; robot = RandomChoice[{rock, paper, scissors}]]
 Dynamic[human]
 Dynamic[robot]
 
