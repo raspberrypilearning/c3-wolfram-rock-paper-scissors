@@ -60,7 +60,7 @@ We can also add extra space inside the `Grid` using `Spacings`.`Spacings` takes 
 Grid[{{"hello", SpanFromLeft}, {"bye", "hi"}}, Frame -> True, 
  FrameStyle -> Thick, Spacings -> {4, 2}]
  ```
- ![spacings frame grid](images/basicgridspacing.png)
+![spacings frame grid](images/basicgridspacing.png)
  
  
  We are going to make two `Grid`s. The first `Grid` will have:
@@ -117,7 +117,7 @@ The second `Grid` will have:
   }, Frame -> True, FrameStyle -> Thick, Spacings -> {2, 1.5}]
   ```
   
-  ![grid with buttons and play choices](images/gridone.png)
+![grid with buttons and play choices](images/gridone.png)
  
  ---/task---
  
@@ -139,7 +139,6 @@ Grid[{
   ```
  ---/task---
  
-
- Excellent. Now you have a play interface, and a results section! Your game is now fully functioning. Play the game, and see if you can beat the computer!
+Excellent. Now you have a play interface, and a results section! Your game is now fully functioning. Play the game, and see if you can beat the computer!
  
  
