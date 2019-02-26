@@ -60,7 +60,7 @@ We can also add extra space inside the `Grid` using `Spacings`.`Spacings` takes 
 Grid[{{"hello", SpanFromLeft}, {"bye", "hi"}}, Frame -> True, 
  FrameStyle -> Thick, Spacings -> {4, 2}]
  ```
- ![spacings frame grid](images/basicgridspacing.png)
+![spacings frame grid](images/basicgridspacing.png)
  
  
  We are going to make two `Grid`s. The first `Grid` will have:
@@ -117,7 +117,7 @@ The second `Grid` will have:
   }, Frame -> True, FrameStyle -> Thick, Spacings -> {2, 1.5}]
   ```
   
-  ![grid with buttons and play choices](images/gridone.png)
+![grid with buttons and play choices](images/gridone.png)
  
  ---/task---
  
@@ -129,7 +129,9 @@ The second `Grid` will have:
  
  Use `Frame -> True` to add a `Frame`, and make the `Frame` thick using `FrameStyle -> Thick`.
   Use `Spacings` to add extra space inside the `Grid`. This `Grid` should have `Spacings -> {3.85, 1.5}`, so that it matches with the first `Grid`. The `Spacings` for this `Grid` are larger because the items in this `Grid` are smaller.
- 
+
+--- hints ---
+--- hint ---
  ```
 Grid[{
   {Style[Text["Your Score:"], 20],Dynamic[Style[Text[humanScore], 20]]},
@@ -137,9 +139,11 @@ Grid[{
   }, Frame -> True, FrameStyle -> Thick, Spacings -> {3.85, 1.5}]
   
   ```
+--- /hint ---
+--- /hints ---
+
  ---/task---
  
-
- Excellent. Now you have a play interface, and a results section! Your game is now fully functioning. Play the game, and see if you can beat the computer!
+Excellent. Now you have a play interface, and a results section! Your game is now fully functioning. Play the game, and see if you can beat the computer!
  
  

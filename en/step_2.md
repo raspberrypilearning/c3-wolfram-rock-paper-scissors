@@ -1,5 +1,9 @@
 ## Building Blocks of the Game
 
+--- task ---
+If you have never used the Wolfram Language before, follow [this guide](https://projects.raspberrypi.org/en/projects/getting-started-with-mathematica) to get started and learn to use the tool. You'll need to look at **Starting Mathematica** and **Programming in Mathematica**.
+--- /task ---
+
 In Rock, Paper, Scissors, two players (in this case, the user and the computer), each select one of the three play options: "Rock", "Paper", or "Scissors".
 
 "Rock" wins against "Scissors", "Scissors" wins against "Paper", and "Paper" wins against "Rock". If both players play the same option, then it's a tie.
@@ -16,7 +20,6 @@ Copy and paste these images into your notebook, and give them the variable names
 Your code should look like this:
 
 ![imported images](images/variables.png)
-
 ---/task---
 
 We want the computer to randomly select one of the three options each time we play. We can accomplish this using `RandomChoice`. `RandomChoice` takes one argument: a list of the possible choices.
@@ -29,17 +32,14 @@ robot = RandomChoice[{rock, paper, scissors}]
 ```
 
 Try evaluating this code a few times to check that you get a different random result each time.
-
 ---/task---
 
 ---task---
-
 Create a variable, `human`, which at the moment will be `rock`, but will be updated to be the user's choice.
 
 ```
 human = rock
 ```
-
 ---/task---
 
 We want the user to be able to select their play option using buttons.
@@ -52,14 +52,14 @@ Create buttons for `rock`, `paper`, and `scissors`. Each button should update th
 You can make a button do multiple actions by separating the actions with a `;`.
 
 ```
-Button[rock, human = rock; robot = RandomChoice[rpc]]
-Button[paper, human = paper; robot = RandomChoice[rpc]]
-Button[scissors, human = scissors; robot = RandomChoice[rpc]]
+Button[rock, human = rock; robot = RandomChoice[{rock, paper, scissors}]]
+Button[paper, human = paper; robot = RandomChoice[{rock, paper, scissors}]]
+Button[scissors, human = scissors; robot = RandomChoice[{rock, paper, scissors}]]
 ```
 
 --- /task ---
 
-You will notice that every time you press the button, there is no output. This is becuase the variables `human` and `robot` need to be evaluated again each time you press the button in order to show the result. It would be better to have the new output show automatically when you press the button.
+You will notice that when you press the button, there is no output. This is becuase the variables `human` and `robot` need to be evaluated again each time you press the button in order to show the result. It would be better to have the new output show automatically when you press the button.
 
 We can do this using `Dynamic`. `Dynamic` displays the updated value, so each time we reevaluate the code by pressing the button, `Dynamic` will update to the new value.
 
@@ -67,11 +67,10 @@ We can do this using `Dynamic`. `Dynamic` displays the updated value, so each ti
 Add `Dynamic` results for the variables `human` and `robot` to show the new outputs each time we press the buttons.
 
 ```
-Button[rock, human = rock; robot = RandomChoice[rpc]]
-Button[paper, human = paper; robot = RandomChoice[rpc]]
-Button[scissors, human = scissors; robot = RandomChoice[rpc]]
+Button[rock, human = rock; robot = RandomChoice[{rock, paper, scissors}]]
+Button[paper, human = paper; robot = RandomChoice[{rock, paper, scissors}]]
+Button[scissors, human = scissors; robot = RandomChoice[{rock, paper, scissors}]]
 Dynamic[human]
 Dynamic[robot]
-
 ```
 ---/task---

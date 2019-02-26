@@ -31,4 +31,6 @@ Which[
  robot == paper, robotScore += 1; "Lose",
  robot == scissors, humanScore += 1; "Win"] 
  ```
+
+Update the `paper` and `scisors` statements to adjust the score appropriately.
 ---/task---
