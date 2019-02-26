@@ -59,6 +59,13 @@ You can update your `Button`s for `scissors` and `paper` in the same way.
 ---task---
 Add a `Which` statement to your `scissors` `Button`, and your `paper` `Button`.
 
+--- hints ---
+--- hint ---
+Look at the code for the `Which` statement you used for `rock` and make copies that include the rules for `paper` and `scissors`, as part of their buttons.
+--- /hint ---
+--- hint ---
+The updated buttons should be coded like this:
+
 ```
 Button[paper,
  human = paper;
@@ -79,4 +86,6 @@ Button[scissors,
   robot == paper, results = "Win"]
  ] 
  ```
+--- /hint ---
+--- /hints ---
 ---/task---

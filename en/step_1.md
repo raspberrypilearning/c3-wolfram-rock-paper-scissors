@@ -4,9 +4,7 @@ In this project, you will create a game of Rock, Paper, Scissors to play against
 
 ### What you will make
 
---- print-only ---
 ![Complete project](images/Complete.png)
---- /print-only ---
 
 --- collapse ---
 ---
@@ -14,12 +12,11 @@ title: What you will need
 ---
 ### Hardware
 
-+ Either a desktop computer, laptop, or a Raspberry Pi
++ A computer: desktop, laptop, or a Raspberry Pi
 
 ### Software
 
 + Wolfram Language
-+ Please note that this project cannot be completed in the web version of Wolfram
 
 --- /collapse ---
 
