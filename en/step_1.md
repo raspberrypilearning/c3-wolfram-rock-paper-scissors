@@ -1,6 +1,6 @@
 ## Introduction
 
-In this project, you will create a game of Rock, Paper, Scissors to play against the computer.
+In this project, you will create a game of Rock-Paper-Scissors to play against the computer.
 
 ### What you will make
 
@@ -16,7 +16,7 @@ title: What you will need
 
 ### Software
 
-+ Wolfram Language
++ Wolfram Language, available for free on the Raspberry Pi as part of the official operating system, Raspbian
 
 --- /collapse ---
 
@@ -25,12 +25,10 @@ title: What you will need
 title: What you will learn
 ---
 
-+ Working with variables and images
-+ Working with `Dynamic` values in Wolfram
-+ Creating interactive buttons in Wolfram
-+ Designing user interfaces in Wolfram
-
-If you have never used the Wolfram Language before, follow [this guide](https://projects.raspberrypi.org/en/projects/getting-started-with-mathematica). You'll need to look at Starting Mathematica and Programming in Mathematica. If you are using the web browser version of Wolfram, you only need to look at Programming in Mathematica.
++ How to work with variables and images
++ How to work with `Dynamic` values in Wolfram
++ How to create interactive buttons in Wolfram
++ How to design user interfaces in Wolfram
 
 --- /collapse ---
 
