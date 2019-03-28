@@ -1,15 +1,15 @@
-## Cleaning your Code
+## Clean your code
 
 You should now have five variables: `human`, `robot`, `results`, `humanScore`, and `robotScore`.
 
-You should have three buttons, each representing one of the options `rock`, `paper`, and `scissors`. When the user presses one of the buttons, the `human` variable should update to match the button, the `robot` variable should update to a new random choice, and the `Which` statement should decide if the play is a "Win, "Lose" or "Tie", and assign a point to either the `humanScore` or the `robotScore`.
+You should have three buttons, each representing one of the options `rock`, `paper`, and `scissors`. When the user presses one of the buttons, the `human` variable should update to match the button, the `robot` variable should update to a new random choice, and the `Which` statement should decide if the play is a "Win, "Lose", or "Tie", and assign 1 point to either the `humanScore` or the `robotScore`.
 
 At the end of your code, you should have `Dynamic[variable_name]`, to show the newly updated value of the variable.
 
 --- task ---
 
-Check that your code does everything you need it to do.
-You can supress the output of a line of code using the `;`, for example when you set up your variables, you don't want them to print their original output.
+Check that your code does everything that it should do.
+You can suppress the output of a line of code using the `;`, for example, to stop the variables from printing their original output:
 
 ```
 results = "tie";
