@@ -26,7 +26,7 @@ The best way to check if one of multiple conditions is true, and return a specif
 A `Which` statement will check a list of conditions. Each condition will have an action associated with it. If the condition is true, then the code will do that action. If the condition is not true, it will move on to the next condition in the `Which` statement, until it finds a condition which is true. In this case, one of the three conditions has to be true. 
 
 --- task ---
-Add a `Which` statement to your `rock` `Button`, which updates the `results` variable depending on if the player wins, ties, or loses.
+Add a `Which` statement to your `rock` button, which updates the `results` variable depending on if the player wins, ties, or loses.
 
 The three conditions the `Which` statement will be checking are:
 
@@ -59,7 +59,7 @@ Button[rock,
 You can update your buttons for `scissors` and `paper` in the same way.
 
 ---task---
-Add a `Which` statement to your `scissors` `Button`, and your `paper` `Button`.
+Add a `Which` statement to your `scissors` button, and your `paper` button.
 
 --- hints ---
 --- hint ---
