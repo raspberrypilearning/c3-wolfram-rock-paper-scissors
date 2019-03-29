@@ -21,9 +21,7 @@ results = "Win"
 ```
 ---/task---
 
-The best way to check if one of multiple conditions is true, and return a specific output if the condition is true, is a `Which` statement.
-
-A `Which` statement will check a list of conditions. Each condition will have an action associated with it. If the condition is true, then the code will do that action. If the condition is not true, it will move on to the next condition in the `Which` statement, until it finds a condition which is true. In this case, one of the three conditions has to be true. 
+The best way to check if one of multiple conditions is true, and return a specific output if the condition is true, is a `Which` statement. `Which` checks multiple conditions for whether they are `True`, and returns a specific output depending on which is the `True` condition. If the first condition is `True`, `Which` returns the output for that condition. If the second condition is `True`, `Which` returns the output for that condition, and so on, until `Which` has checked all conditions.
 
 --- task ---
 Add a `Which` statement to your `rock` button, which updates the `results` variable depending on if the player wins, ties, or loses.
