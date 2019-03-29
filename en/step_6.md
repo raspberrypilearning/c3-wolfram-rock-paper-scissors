@@ -1,6 +1,6 @@
-## Building an Interface
+## Create an interface
 
-One design decision we can make for this project is removing the frames on buttons. The button acts in exactly the same way, it just doesn't have a frame around it.
+If you want to, you can remove the frames on the buttons. The button will do the same thing, but it will not have a frame around it.
 
 ```Button[rock, Appearance -> None]```
 
@@ -10,7 +10,7 @@ One design decision we can make for this project is removing the frames on butto
 
 Add `Appearance -> None` to each `Button`.
 
-For example, the code for `rock` button should now be:
+For example, the code for the `rock` button should now be:
 
 ```
 Button[rock,
@@ -28,9 +28,9 @@ Button[rock,
  
  --- /task ---
 
-We can also use `Grid` to build a nice interface.
+You can also use `Grid` to make a nice interface.
 
-Let's take a look at an example of `Grid`.
+Here is an example of `Grid`:
 
 ```
 Grid[{{"hello", "goodbye"}, {"bye", "hi"}}]
@@ -38,23 +38,23 @@ Grid[{{"hello", "goodbye"}, {"bye", "hi"}}]
 
 ![basicgrid](images/basicgrid.png)
 
-As you can see, a `Grid` is a list of lists. Each list becomes a row in the `Grid`.
+As you can see, a `Grid` is a list of lists, where each list becomes a row in the `Grid`.
 
-We can span certain elements across the grid using `SpanFromLeft`.
+You can use `SpanFromLeft` to span elements across the grid, like in the example below:
 
 ```
 Grid[{{"hello", SpanFromLeft}, {"bye", "hi"}}]
 ```
 ![span from left](images/basicgridspan.png)
 
-We can draw a frame around the outside using `Frame -> True`, and we can make the frame thick by using `FrameStyle -> Thick`.
+You can use `Frame -> True` to draw a frame around the outside, and you can use `FrameStyle -> Thick` to make the frame thick.
 
 ```
 Grid[{{"hello", SpanFromLeft}, {"bye", "hi"}}, Frame -> True, FrameStyle -> Thick]
 ```
 ![frame grid](images/basicgridframe.png)
 
-We can also add extra space inside the `Grid` using `Spacings`.`Spacings` takes two dimensions: horizontal and vertical, in a list. The horizontal number makes each column in the grid a certain width. The vertical number makes each row in the grid a certain height.
+You can also use `Spacings` to add extra space inside the `Grid`.`Spacings` takes two dimensions, horizontal and vertical, in a list. The horizontal number makes each column in the grid a certain width. The vertical number makes each row in the grid a certain height.
 
 ```
 Grid[{{"hello", SpanFromLeft}, {"bye", "hi"}}, Frame -> True, 
@@ -63,25 +63,25 @@ Grid[{{"hello", SpanFromLeft}, {"bye", "hi"}}, Frame -> True,
 ![spacings frame grid](images/basicgridspacing.png)
  
  
- We are going to make two `Grid`s. The first `Grid` will have:
+You will now make two `Grid`s. The first `Grid` will have:
 + a title
-+ the three buttons: `rock`, `paper`, and `scissors`, for the user to choose their play
++ the three buttons, `rock`, `paper`, and `scissors`, for the user to choose their move
 + the `human` choice, the result, and the `robot` choice
 
 The second `Grid` will have:
-+ The `humanScore`
-+ The `robotScore`
++ the `humanScore`
++ the `robotScore`
  
  ---task ---
  
  Build a `Grid` with three rows.
  
- + The first row should contain a title, which you can customise using `Style[Text["title"]]`. Because the second and third row have three elements, we can centre the title by using `SpanFromLeft` twice.
+ + The first row should contain a title. You can use `Style[Text["title"]]` to customise the title. The second and third row have three elements, so you can use `SpanFromLeft` twice to centre the title.
  + The second row should be the three buttons.
  + The third row should be `Dynamic[human]`, `Dynamic[result]`, and `Dynamic[robot]`.
  
- Use `Frame -> True` to add a `Frame`, and make the `Frame` thick using `FrameStyle -> Thick`.
- Use `Spacings` to add extra space inside the `Grid`. This `Grid` should have `Spacings -> {2, 1.5}`, so that it matches with the second `Grid`.
+ Use `Frame -> True` to add a `Frame`, and use `FrameStyle -> Thick` to make the `Frame` thick.
+ Use `Spacings` to add extra space inside the `Grid`. This `Grid` should have `Spacings -> {2, 1.5}`, so that it matches the second `Grid`.
  
  ```
  Grid[{
@@ -124,14 +124,15 @@ The second `Grid` will have:
  --- task---
  Build a second `Grid` with two rows to show the scores.
  
- + The first row should contain text "Your Score", and the `humanScore`
- + The second row should contain text "Robot Score", and the `robotScore`
+ + The first row should contain the text "Your Score", and the `humanScore`
+ + The second row should contain the text "Robot Score", and the `robotScore`
  
- Use `Frame -> True` to add a `Frame`, and make the `Frame` thick using `FrameStyle -> Thick`.
-  Use `Spacings` to add extra space inside the `Grid`. This `Grid` should have `Spacings -> {3.85, 1.5}`, so that it matches with the first `Grid`. The `Spacings` for this `Grid` are larger because the items in this `Grid` are smaller.
+ Use `Frame -> True` to add a `Frame`, and use `FrameStyle -> Thick` to make the `Frame` thick.
+ Use `Spacings` to add extra space inside the `Grid`. This `Grid` should have `Spacings -> {3.85, 1.5}`, so that it matches the first `Grid`. The `Spacings` for this `Grid` are larger because the items in this `Grid` are smaller.
 
 --- hints ---
 --- hint ---
+The code for the second `Grid` is as follows:
  ```
 Grid[{
   {Style[Text["Your Score:"], 20],Dynamic[Style[Text[humanScore], 20]]},
@@ -144,6 +145,6 @@ Grid[{
 
  ---/task---
  
-Excellent. Now you have a play interface, and a results section! Your game is now fully functioning. Play the game, and see if you can beat the computer!
+Now you have a play interface, and a results section - your game works! Play the game, and see if you can beat the computer!
  
  
