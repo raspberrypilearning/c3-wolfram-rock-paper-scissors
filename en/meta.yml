@@ -1,4 +1,4 @@
-title: Rock, Paper, Scissors
+title: Rock-Paper-Scissors
 hero_image: images/banner.png
 description:
 version: 4
@@ -7,8 +7,8 @@ copyedit: false
 last_tested: "2018-12-06"
 steps:
   - title: Introduction
-  - title: Building Blocks of the Game
-  - title: Setting up Game Rules
-  - title: Keeping Score
-  - title: Cleaning your Code
-  - title: Building an Interface
+  - title: Make the building blocks of the game
+  - title: Set up the rules of the game
+  - title: Set up scorekeeping
+  - title: Clean your code
+  - title: Create an interface
