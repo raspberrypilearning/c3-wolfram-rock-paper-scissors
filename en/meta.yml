@@ -1,14 +1,19 @@
+---
 title: Visual Rock Paper Scissors
 hero_image: images/banner.png
-description:
+description: 
 version: 4
 listed: true
 copyedit: true
-last_tested: "2018-12-06"
+last_tested: '2018-12-06'
 steps:
-  - title: Introduction
-  - title: Make the building blocks of the game
-  - title: Set up the rules of the game
-  - title: Set up scorekeeping
-  - title: Clean your code
-  - title: Create an interface
+- title: Introduction
+- title: Make the building blocks of the game
+- title: Set up the rules of the game
+  completion:
+  - engaged
+- title: Set up scorekeeping
+- title: Clean your code
+- title: Create an interface
+  completion:
+  - internal
